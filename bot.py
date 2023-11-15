@@ -11,7 +11,7 @@ with open(api_key_path, "r") as key_file:
 # Set up your Telegram bot API token
 api_id = '22923523'
 api_hash = 'd52c7824d0e66903a0724b800a16ce2c'
-bot_token = '6824486125:AAGskYeykeWvs_J9nruWKxlQyoyb-PcFdAA'
+bot_token = '6926233679:AAHRzX72NxPPGi0xRc4nXD7X53RwfKBYI6s'
 
 # Initialize the Pyrogram client
 app = Client("my_bot", api_id=api_id, api_hash=api_hash, bot_token=bot_token)
