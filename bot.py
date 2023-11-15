@@ -21,7 +21,7 @@ def solve_fluid_mechanics_problem(question):
     # Use OpenAI to generate a solution based on the input question
     response = openai.Completion.create(
         engine="text-davinci-002",
-        prompt=f"Solve the following fluid mechanics problem:\n{question}\nSolution:",
+        prompt=f"you are a project designer:\n{question}\nSolution:",
         temperature=0.7,
         max_tokens=150,
         n=1,
@@ -32,7 +32,7 @@ def solve_fluid_mechanics_problem(question):
 # Define a handler for the /start command
 @app.on_message(filters.command("start"))
 def start_command(client, message):
-    message.reply("Hello! I am your Fluid Mechanics Problem Solver bot. Send me a fluid mechanics problem, and I'll solve it for you!")
+    message.reply("Hello! I am a project designer bot. Send me a fluid mechanics problem, and I'll solve it for you!")
 
 # Define a handler for messages containing fluid mechanics problems
 @app.on_message(filters.text & ~filters.command("start"))
